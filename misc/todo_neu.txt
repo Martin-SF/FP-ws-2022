@@ -1,0 +1,21 @@
+
+
+* messwerte aus python über datei auf latex übertragen -> kein per hand übertragen mehr nötig
+
+
+BASIC:
+
+* main.tex verstecken
+* Arbeits-tex und arbeits-py in einen ordner oder verschiedene aber nicht 2 verschiedene ebenen
+* 
+
+
+* ausgabe von python dateien immer in build, über in GROßEN Parameter möglich?!?
+* cuurrent dir in python am anfang festlegen
+
+* build umbenennen in out (kürzer zu schreiben)
+
+* kompatibilität zu templazte / max arne, anpassen oder genau notieren was alles anders ist. ("konvertieren_anleitung.txt")
+
+* was hänt wo miteinander zusammen. Welche verweise verhinder zb. verschieben von dateien -> übersicht.
+* github login speichern

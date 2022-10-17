@@ -1,0 +1,76 @@
+\input{content/fix/header.tex}
+
+% Quellendatenbank
+\addbibresource{content/fix/lit.bib}
+\addbibresource{content/fix/programme.bib}
+
+\subject{VXXX}
+\title{VERSUCHSNAME}
+\date{
+  Durchführung: xx.xx.xx
+  \hspace{3em}
+  Abgabe: xx.xx.xx
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+
+\input{content/zielsetzung.tex}
+\input{content/theorie.tex}
+\input{content/durchfuehrung.tex}
+\input{content/aufbau.tex}
+%\input{content/fehlerrechnung.tex}
+\input{content/auswertung.tex}
+\input{content/diskussion.tex}
+
+%\nocite{*}
+\printbibliography{}
+
+\end{document}
+
+
+
+% nützliche Layouts Idee: als shortcut in script_helper
+
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=0.7\textwidth]{content/BILD.png}
+%   \caption{BESCHREIBUNG \cite{Anleitung}.}
+%   \label{fig:LABEL}
+% \end{figure}
+
+
+
+
+% \begin{table}
+%   \centering
+%   \caption{BESCHREIBUNG.}
+%   \label{tab:LABEL}
+%   \begin{tabular}{S S}
+%     \toprule
+%       \multicolumn{1}{c}{} &
+%       \multicolumn{1}{c}{$U_B = 180V $} &
+%
+%     \midrule
+%     {$ D \;/\; \si{\milli\meter}$} &
+%     {$ U_d \;/\; \si{\volt}$} \\
+%
+%     \midrule
+%        6	& 19.8 &	21.7 &	 25	  & 29.3 & 	32.7 \\
+%       12	& 16.5 &	18.6 &	 21.4 &	25.4 & 	27.4 \\
+%
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+
+
+
+% \begin{equation}
+%
+%     \label{eqn:LABEL}
+% \end{equation}
