@@ -1,0 +1,15 @@
+# Probe 3: hochreines GaAs
+# L = 5.11 mm
+# Wellenlänge des Filters lambda
+# Winkel vor Umpolung t1 und nach t2
+# Winkelminuten tim
+# lambda/nm t1/° t1m/'' t2/° t2m/''
+2650 164 55 157 40
+2510 214 20 210 05
+2340 233 30 228 30
+2156 260 00 253 10
+1960 260 50 253 35
+1720 266 20 256 40
+1450 268 40 255 40
+1290 269 05 252 00
+1060 273 00 250 00

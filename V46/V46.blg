@@ -1,0 +1,15 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'V46.blg'
+[85] biber:340> INFO - === Fr Okt 28, 2022, 08:51:27
+[101] Biber.pm:418> INFO - Reading 'V46.bcf'
+[183] Biber.pm:978> INFO - Found 2 citekeys in bib section 0
+[199] Biber.pm:4401> INFO - Processing section 0
+[213] Biber.pm:4592> INFO - Looking for bibtex file 'lit.bib' for section 0
+[214] bibtex.pm:1713> INFO - LaTeX decoding ...
+[218] bibtex.pm:1518> INFO - Found BibTeX data source 'lit.bib'
+[264] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[264] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[264] Biber.pm:4221> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[264] Biber.pm:4227> INFO - No sort tailoring available for locale 'de-DE'
+[271] bbl.pm:654> INFO - Writing 'V46.bbl' with encoding 'UTF-8'
+[273] bbl.pm:757> INFO - Output to V46.bbl

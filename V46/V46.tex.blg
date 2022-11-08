@@ -1,0 +1,5 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'V46.tex.blg'
+[87] biber:340> INFO - === Fr Okt 28, 2022, 08:33:10
+[272] Utils.pm:410> ERROR - Cannot find 'V46.tex.bcf'!
+[272] Biber.pm:135> INFO - ERRORS: 1
