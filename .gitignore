@@ -1,4 +1,6 @@
-# latex
+# FILE based
+
+# LaTex
 *.log
 *.bbl
 *.blg
@@ -11,18 +13,16 @@
 *.xml
 *.fls
 
-# FILE based
-!**/main.pdf
 **/~$*.xlsx
-V_basic/test.py
-# *.pdf
 
 # FOLDER based
-!misc/*/
-!*/Anleitungen_Altprotokolle/**/
-!*/data/**/
-!*/content/**/
-!*/pic/**/
 **/build/
 **/.ipynb_checkpoints/
 **/_pycache_/
+
+# FOLDER based (exceptions)
+!*/Anleitungen_Altprotokolle/**/
+!*/data/**/
+!*/pic/**/
+!*/rohdaten/**/
+!*/figures/**/
