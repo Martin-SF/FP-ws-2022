@@ -1,8 +1,0 @@
-von pete
-	- txt ind latex-tabelle
-	- große makefile inklusive aller py skripte
-		- makefile von pete
-	- generelle umstellung auf make
-	- csv einlesen in python
-	- standartisierter workflow excel csv in lesbar aus python
-	
