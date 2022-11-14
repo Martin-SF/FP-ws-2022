@@ -29,12 +29,17 @@
 % sollte man das Seiten-Layout neu berechnen lassen
 \recalctypearea{}
 
-% Einrücken nach Absatz
-\setlength{\parindent}{0pt}
 
+% Einrücken nach Absatz 
+% \setlength{\parindent}{0pt} % (toolbox 2022 wurde das rausgenommen)
+
+% (toolbox 2022 wurde das rausgenommen)
 % deutsche Spracheinstellungen
-\usepackage{polyglossia}
-\setmainlanguage{german}
+% \usepackage{polyglossia}
+% \setmainlanguage{german}
+
+% (toolbox 2022 neu:)
+\usepackage[ngerman]{babel}
 
 
 \usepackage[
@@ -60,7 +65,7 @@
 % Zahlen und Einheiten
 \usepackage[
   locale=DE,                   % deutsche Einstellungen
-  separate-uncertainty=true,   % immer Fehler mit \pm
+  separate-uncertainty=true,   % immer Unsicherheit mit \pm
   per-mode=symbol-or-fraction, % / in inline math, fraction in display math
 ]{siunitx}
 
@@ -81,7 +86,7 @@
 \usepackage{float}
 \floatplacement{figure}{htbp}
 \floatplacement{table}{htbp}
-\setcounter{totalnumber}{5}
+% \setcounter{totalnumber}{5} % (toolbox 2022 wurde das rausgenommen)
 
 % Floats innerhalb einer Section halten
 \usepackage[
@@ -104,7 +109,7 @@
 % Grafiken können eingebunden werden
 \usepackage{graphicx}
 % größere Variation von Dateinamen möglich
-\usepackage{grffile}
+% \usepackage{grffile} % (toolbox 2022 wurde das rausgenommen)
 
 % schöne Tabellen
 \usepackage{booktabs}
@@ -113,15 +118,19 @@
 \usepackage{microtype}
 
 % Literaturverzeichnis
+% \usepackage[
+%   backend=biber,
+%   style=numeric,
+%   sorting=none
+% ]{biblatex}
+% (toolbox 2022 wurde das verändert:)
 \usepackage[
   backend=biber,
-  style=numeric,
-  sorting=none
 ]{biblatex}
-
 
 % Hyperlinks im Dokument
 \usepackage[
+  german,
   unicode,        % Unicode in PDF-Attributen erlauben
   pdfusetitle,    % Titel, Autoren und Datum als PDF-Attribute
   pdfcreator={},  % ┐ PDF-Attribute säubern
@@ -132,12 +141,12 @@
 
 % Trennung von Wörtern mit Strichen
 \usepackage[shortcuts]{extdash}
-
 \author{%
-  Frederik Rennebaum\\%
-  \href{mailto:frederik.rennebaum@tu-dortmund.de}{frederik.rennebaum@udo.edu}%
-  \texorpdfstring{\and}{,}%
   Martin Schönfeld\\%
-  \href{mailto:martin.schoenfeld@tu-dortmund.de}{martin.schoenfeld@udo.edu}%
+  \href{mailto:martin.schoenfeld@udo.edu}{martin.schoenfeld@udo.edu}%
+  \and%
+  Tim Sedlaczek\\%
+  \href{mailto:tim.sedlaczek@udo.edu}{tim.sedlaczek@udo.edu}%
 }
+
 \publishers{TU Dortmund – Fakultät Physik}
