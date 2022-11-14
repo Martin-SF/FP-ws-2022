@@ -1,0 +1,26 @@
+\section{Durchführung}
+\label{sec:Durchführung}
+
+Vor der eigentlichen Messung muss der Aufbau zunächst justiert werden. 
+
+\subsection{Justage}
+
+Die Justage des Aufbaus erfolgt in sechs Schritten.
+Als erstes wird ein Detektorscan durchgeführt, wofür die Probe nicht im Strahlgang liegt. Der Detektor und die Röntgenröhre werden auf die
+Position $\SI{0}{\degree}$ gefahren. Deren Lage wird nun variiert, um die tatsächliche Nulllage des Detektors zu finden. Dies wird getan, bis die Intensität des 
+Primärstrahls das Maximum durchläuft. Genau diese Position ist die normierte Nullposition. Darauf folgt der erste Z-Scan.
+Hier wird die Probenjustage angepasst. Die Probe wird in den Strahlengang gebracht und die Intensität $I$ wird für verschiedene
+z-Positionen gemessen. Die Position der Probe wird variiert, bis $I$ auf den Wert $I = \frac{1}{2}I_\text{max}$ sinkt. Nun misst 
+man den ersten Rockingscan. Der Detektor und die Röntgenröhre werden um die Probe bewegt. Es wird ein konstanter Winkel $2\theta = \SI{0}{\degree}$ beibehalten
+zwischen der Probe und dem Detektor. Das Maximum aus dem resultierenden Intensitätsverlauf wird abgelesen und für die weiteren Schritte verwendet. 
+Darauf folgt der zweite Z-Scan. Weil die Position der Probe sich durch den Rockingscan verändert hat, wird ein erneuter Z-Scan durchgeführt.
+Hiernach wird ein zweiter Rockingscan durchgeführt für eine Erhöhung der Präzession. Es wird erneut das Maximum abgelesen während die
+Motoren entsprechend ausgerichtet werden. Als letztes wird ein dritter Rockingscan durchgeführt, bei dem mit genauerer Kalibration das
+Maximum vermessen wird.
+
+\subsection{Messung}
+
+Nach der Justage wird ein Reflektivitätsscan durchgeführt. Der Einfallswinkel $\alpha_i$ und der Winkel zwischen Probe 
+und Detektor $\alpha_\text{f}$ sind hier gleich. Es wird ein Scanbereich von $\SI{0}{\degree}$ bis $\SI{2.5}{\degree}$ und eine Schrittweite 
+von $\SI{0.005}{\degree}$ gewählt. Die Messzeit beträgt $\SI{40}{\minute}$. \\
+Zusätzlich wird ein diffuser Scan durchgeführt. Hier wird der Anteil der gestreuten Intensität an der Reflektivität bestimmt.
