@@ -1,23 +1,28 @@
+# latex
 *.log
-*.pdf
+*.bbl
+*.blg
+*.fdb_latexmk
+*.bak
 *.aux
 *.bcf
 *.log
 *.toc
 *.xml
-*.bbl
-*.blg
-*.fdb_latexmk
 *.fls
-*.bak
+
+# FILE based
+!**/main.pdf
+**/~$*.xlsx
+V_basic/test.py
+# *.pdf
+
+# FOLDER based
 !misc/*/
 !*/Anleitungen_Altprotokolle/**/
-!**/main.pdf
 !*/data/**/
 !*/content/**/
 !*/pic/**/
 **/build/
-**/~$*.xlsx
 **/.ipynb_checkpoints/
 **/_pycache_/
-V_basic/test.py
