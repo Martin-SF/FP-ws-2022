@@ -27,3 +27,6 @@
 !*/pic/**/
 !*/rohdaten/**/
 !*/figures/**/
+
+# non reproducable files from V46
+!V46/build

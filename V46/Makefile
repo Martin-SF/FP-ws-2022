@@ -1,15 +1,5 @@
 all: build/V46.pdf
 
-# hier Python-Skripte:
-build/plot.pdf: plot.py ../matplotlibrc ../header-matplotlib.tex | build
-	# so that matplotlib can find the tex header when running
-	# LaTeX in the tmp directory
-	# and set the matplotlibrc
-	TEXINPUTS=$$(pwd)/..: MATPLOTLIBRC=../matplotlibrc python plot.py
-
-# hier weitere Abhängigkeiten für build/vXXX.pdf deklarieren:
-# build/V46.pdf: build/plot.pdf
-
 build/V46.pdf: FORCE | build
 	# to find header and bib files in the main directory
 	TEXINPUTS=..: \
@@ -25,9 +15,6 @@ build/V46.pdf: FORCE | build
 build:
 	mkdir -p build
 
-clean:
-	rm -rf build
-
 FORCE:
 
-.PHONY: all clean
+.PHONY: all
