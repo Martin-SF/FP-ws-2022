@@ -13,6 +13,7 @@
 *.xml
 *.fls
 
+*Zone.Identifier
 **/~$*.xlsx
 
 # FOLDER based
