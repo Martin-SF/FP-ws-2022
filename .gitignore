@@ -20,6 +20,7 @@
 **/build/
 **/.ipynb_checkpoints/
 **/_pycache_/
+**/.vscode/
 
 # FOLDER based (exceptions)
 !*/Anleitungen_Altprotokolle/**/
