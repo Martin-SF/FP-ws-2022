@@ -20,6 +20,7 @@
 **/build/
 **/.ipynb_checkpoints/
 **/_pycache_/
+**/__pycache__/
 **/.vscode/
 
 # FOLDER based (exceptions)
