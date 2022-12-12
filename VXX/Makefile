@@ -4,29 +4,29 @@ TeXOptions = -lualatex \
 			 -synctex=1 \
 			 -output-directory=build
 
-filename = VXX
+versuchsbezeichung = VXX
 
-all: build/$(filename).pdf
+all: build/$(versuchsbezeichung).pdf
 
 # Python:
 build/plot.pdf: plot.py matplotlibrc header-matplotlib.tex | build 
 	TEXINPUTS=.: python plot.py
 
-# hier weitere Abhängigkeiten für build/$(filename).pdf deklarieren:
-build/$(filename).pdf: build/plot.pdf
+# hier weitere Abhängigkeiten für build/$(versuchsbezeichung).pdf deklarieren:
+build/$(versuchsbezeichung).pdf: build/plot.pdf
 
-build/$(filename).pdf: FORCE | build
+build/$(versuchsbezeichung).pdf: FORCE | build
 	max_print_line=1048576 \
-	latexmk $(TeXOptions) $(filename).tex
-	cp build/$(filename).pdf $(filename).pdf
+	latexmk $(TeXOptions) $(versuchsbezeichung).tex
+	cp build/$(versuchsbezeichung).pdf $(versuchsbezeichung).pdf
 
 only_latex: FORCE | build
 	max_print_line=1048576 \
-	latexmk $(TeXOptions) $(filename).tex
-	cp build/$(filename).pdf $(filename).pdf
+	latexmk $(TeXOptions) $(versuchsbezeichung).tex
+	cp build/$(versuchsbezeichung).pdf $(versuchsbezeichung).pdf
 
 only_latex_fast: FORCE | build
-	lualatex --output-directory=build --interaction=nonstopmode --synctex=1 $(filename).tex
+	lualatex --output-directory=build --interaction=nonstopmode --synctex=1 $(versuchsbezeichung).tex
 
 build:
 	mkdir -p build
